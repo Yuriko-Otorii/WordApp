@@ -1,0 +1,66 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  email String?  @unique
+  username String
+  password String
+  words Word[]
+  categories Category[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  categoryName String
+  words Word[]
+  user User @relation(fields: [userId], references: [id])
+  userId String @map("_userId") @db.ObjectId
+}
+
+model Word {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  word String
+  pronunciation String?
+  PartsOfSpeach String?
+  image String?
+  memoryProcess Int
+  testCount Int
+  favorite Boolean @default(false)
+  updatedAt DateTime @updatedAt
+  user User @relation(fields: [userId], references: [id])
+  userId String @map("_userId") @db.ObjectId
+  category Category @relation(fields: [categoryId], references: [id])
+  categoryId String @map("_categoryId") @db.ObjectId
+  definition Definition @relation(fields: [definitionId], references: [id])
+  definitionId String @map("_definitionId") @db.ObjectId
+  example Example @relation(fields: [definitionId], references: [id])
+  exampleId String @map("_exampleId") @db.ObjectId
+}
+
+model Definition {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  definition String
+  words Word[]
+}
+
+model Example {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  sentence String
+  words Word[]
+}
+
+
+

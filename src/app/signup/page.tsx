@@ -35,7 +35,7 @@ const Signup = () => {
             <input
               ref={usernameInput}
               type="text"
-              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput1"
               placeholder="Username"
             />
@@ -50,7 +50,7 @@ const Signup = () => {
             <input
               ref={emailInput}
               type="text"
-              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput2"
               placeholder="Email address"
             />
@@ -65,7 +65,7 @@ const Signup = () => {
             <input
               ref={passwordInput}
               type="password"
-              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput3"
               placeholder="Password"
             />
@@ -80,7 +80,7 @@ const Signup = () => {
             <input
               ref={confirmPasswordInput}
               type="password"
-              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput4"
               placeholder="Confirm password"
             />

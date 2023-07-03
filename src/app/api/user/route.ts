@@ -11,11 +11,9 @@ export async function GET() {
 }
 
 
-export async function POST(req: Request) {
-  console.log("POST");
-  
-  const { email, username, password } = await req.json();
-  const newUser = await createUser(email, username, password)  
+export async function POST(req: Request) {  
+  const { email, username, confirmPassword } = await req.json();
+  const newUser = await createUser(email, username, confirmPassword)  
 
   return NextResponse.json(newUser)
 }
