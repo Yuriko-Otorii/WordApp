@@ -9,19 +9,19 @@ const Login = () => {
       </p>
       <div className="relative flex justify-center w-screen h-screen">
         <form 
-          className="absolute top-[52%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-50 w-[70%] bg-white/[.935] p-5 rounded-lg drop-shadow-md"
+          className="absolute top-[52%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-50 w-[70%] bg-white/[.935] p-5 pt-7 rounded-lg drop-shadow-md"
           
         >
           <div className="relative mb-4" data-te-input-wrapper-init>
             <input
               type="text"
-              className="peer block min-h-[auto] w-full mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full pl-1 mb-[1.5rem] rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput2"
               placeholder="Email address"
             />
             <label
               htmlFor="exampleFormControlInput2"
-              className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+              className="absolute left-0 pl-0.5 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
             >
               Email address
             </label>
@@ -29,13 +29,13 @@ const Login = () => {
           <div className="relative mb-[3rem]" data-te-input-wrapper-init>
             <input
               type="password"
-              className="peer block min-h-[auto] w-full rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+              className="peer block min-h-[auto] w-full pl-1 rounded border-b border-gray-500 bg-transparent py-[0.32rem] leading-[1.8] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
               id="exampleFormControlInput22"
               placeholder="Password"
             />
             <label
               htmlFor="exampleFormControlInput22"
-              className="absolute left-0 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
+              className="absolute left-0 pl-0.5 -top-3.5 text-gray-600 text-sm peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-440 peer-placeholder-shown:top-2 transition-all peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
             >
               Password
             </label>
