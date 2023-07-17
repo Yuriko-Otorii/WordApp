@@ -1,13 +1,17 @@
 import { PrismaClient } from "@prisma/client";
+import { hash } from "bcrypt";
 
 const prisma = new PrismaClient();
 
-export const createUser = async (username: string, email: string, password: string) => {
+export const createUser = async (email: string, username: string, password: string) => {  
+  const hashedPassword = await hash(password, 12)
+  console.log(hashedPassword);
+  
   const user = await prisma.user.create({
     data: {
-      username,
       email,
-      password
+      username,
+      password: hashedPassword,
     }
   })
 
@@ -19,3 +23,12 @@ export const getAllUser = async () => {
 
   return allUsers;
 }
+
+export const deleteUser = async (id: string) => {
+  await prisma.user.delete({where: {id}})
+  console.log("DELETE done");
+}
+// export const deleteUser = async (email: string) => {
+//   await prisma.user.delete({where: {email: email}})
+//   console.log("DELETE done");
+// }

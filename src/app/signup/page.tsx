@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-import { signupRequest } from "../utils/auth/signup/signupFunction";
+import { deleteUserRequest, fetchUserList, signupRequest } from "../utils/auth/signup/signupFunction";
 import { signupData } from "../types/auth.type";
 import { passwordSchema } from "../utils/auth/validations"; 
 import { useSignupValidation } from "../utils/auth/validations";
@@ -21,7 +21,9 @@ const Signup = () => {
       if(validPassword !== user.password){
         setConfirmPasswordErrorMsg("Password does not match")
       }else{
-        // signupRequest({ username, email, validPassword });
+        const response = signupRequest(user);
+        // deleteUserRequest({id: ""})
+        // fetchUserList()
       }
     })
     .catch(error => {      
